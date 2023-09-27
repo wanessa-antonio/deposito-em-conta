@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Deposito {    
+public class Deposito {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
@@ -10,6 +10,8 @@ public class Deposito {
             // Solicita ao usuário que insira o valor do depósito
             System.out.print("Digite o valor do depósito (ou 0 para encerrar): ");
             double valor = scanner.nextDouble();
+            
+            System.out.println(); // Adiciona uma linha em branco
 
             if (valor > 0) {
                 System.out.println("Depósito realizado com sucesso!");
@@ -20,9 +22,12 @@ public class Deposito {
             } else {
                 System.out.println("Valor inválido! Digite um valor maior que zero.");
             }
+            
+            System.out.println(); // Adiciona uma linha em branco
         }
 
         scanner.close();
     }
 }
+
 
